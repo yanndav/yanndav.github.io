@@ -1,0 +1,243 @@
+/* Personal webpage css */
+/* Edited by Yann David - February 2021 */
+
+/******* GENERAL SETTINGS ************************************/
+/* Resetting margin/padding/margins */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/****** HEADER PART **********************************************/
+
+/* Setting header parameters */
+header ul {
+  /* removing list buttons */
+  list-style-type: none;
+  /* defining background color */
+  background-color: white;
+  /* setting position stcky to the top */
+  position: -webkit-sticky;
+  position: sticky;
+  /* Removing client default margin and padding */
+  margin: 1% 5% 1% 5%;
+  padding: 0;
+  /* what if content overflows */
+  overflow: hidden;
+  /* where is the top */
+  top: 0;
+}
+
+header li {
+  /* ensuring links are aligned */
+  float: right;
+}
+
+header li a {
+  /* creating button blocks */
+  display: block;
+  /* space between buttons */
+  padding: 8px;
+}
+
+header li a:link,
+header li a:visited {
+  /* removing bottom line of links in header */
+  text-decoration: none;
+  /* setting default links font color in header */
+  color: black;
+}
+
+header li a:hover,
+header li a:active {
+  /* setting links font color in header when hover or active */
+  color: rgb(48, 148, 214);
+  /* setting links font weight in header when hover or active */
+  font-weight: 500;
+}
+
+/****** BODY PART **********************************************/
+
+/* Setting body parameters */
+body {
+  font-family: "Open Sans", Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  color: white;
+}
+
+.gradient {
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #113c63,
+    #176391,
+    #168ebf,
+    #12bceb
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+  background-attachment: fixed;
+}
+
+/* Title options */
+h1 {
+  /* defining font zie relative to body font size */
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Creating a margin between screen border and content */
+div.container {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+div.presentation {
+  /* position relative to ancestor element */
+  position: relative;
+  /* ensure the presentation box is centered */
+  margin: 80px auto 30px auto;
+
+  /* Padding element inside */
+  padding: 30px 40px 30px 40px;
+
+  /* border radius */
+  border-radius: 10px;
+  /* temporary border to observe stuff */
+  /* border: 2px solid black; */
+  background-color: rgba(33, 28, 33, 0.33);
+}
+
+img.imagePresentation {
+  border-radius: 50%;
+  max-width: 180px;
+  height: auto;
+}
+
+.selfPresentation {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.identity {
+  font-size: 1.7em;
+  font-weight: 900;
+  text-align: center;
+  /* text-align: center; */
+}
+
+/* Defining links parameters in paragraphs */
+p a:link,
+p a:visited {
+  /* removing bottom line of links in header */
+  text-decoration: none;
+  /* setting default links font color in header */
+  color: white;
+  font-weight: 900;
+}
+
+p a:hover,
+p a:active {
+  /* setting links font color in header when hover or active */
+  color: rgb(0, 153, 255);
+  /* setting links font weight in header when hover or active */
+  font-weight: 900;
+  font-style: italic;
+}
+
+p > br {
+  margin-bottom: 20px;
+}
+
+ul.networkLinks {
+  clear: left;
+  /* removing list buttons */
+  list-style-type: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul.networkLinks li {
+  /* ensuring links are aligned */
+  display: inline-block;
+  float: none;
+}
+
+ul.networkLinks li a {
+  /* creating button blocks */
+  display: block;
+  /* space between buttons */
+  padding: 10px;
+}
+
+ul.networkLinks li a:link,
+ul.networkLinks li a:visited {
+  /* removing bottom line of links in div */
+  text-decoration: none;
+  /* setting default links font color in div */
+  font-weight: 900;
+  color: white;
+}
+
+ul.networkLinks li a:hover,
+ul.networkLinks li a:active {
+  /* setting links font color in div when hover or active */
+  color: rgb(0, 153, 255);
+  /* setting links font weight in div when hover or active */
+  font-weight: 900;
+}
+
+div.projects {
+  /* box width */
+  width: 700px;
+  /* position relative to ancestor element */
+  position: relative;
+  /* ensure the presentation box is centered */
+  margin: 80px auto 30px auto;
+
+  /* Padding element inside */
+  padding: 30px 30px 40px 30px;
+
+  /* border radius */
+  border-radius: 10px;
+  /* temporary border to observe stuff */
+  /* border: 2px solid black; */
+  background-color: rgba(33, 28, 33, 0.33);
+}
+
+/*********************  Large devices *****************************/
+@media (min-width: 770px) {
+  div.presentation {
+    /* box width */
+    width: 800px;
+  }
+  .identity {
+    width: 30%;
+    float: right;
+  }
+  .selfPresentation {
+    float: left;
+    width: 60%;
+  }
+}
+
+@media (max-width: 769px) {
+  div.presentation {
+    /* box width */
+    border-color: transparent;
+    width: 90%;
+  }
+
+  .identity {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
