@@ -103,7 +103,7 @@ div.presentation {
   margin: 80px auto 30px auto;
 
   /* Padding element inside */
-  padding: 30px 40px 30px 40px;
+  padding: 30px 40px 40px 40px;
 
   /* border radius */
   border-radius: 10px;
@@ -158,11 +158,12 @@ ul.networkLinks {
   /* removing list buttons */
   list-style-type: none;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 ul.networkLinks li {
   /* ensuring links are aligned */
+  margin-top: 30px;
   display: inline-block;
   float: none;
 }
@@ -171,7 +172,10 @@ ul.networkLinks li a {
   /* creating button blocks */
   display: block;
   /* space between buttons */
-  padding: 10px;
+  padding: 8px 15px 8px 15px;
+  border: 1px;
+  border-radius: 10px;
+  margin-left: 20px;
 }
 
 ul.networkLinks li a:link,
@@ -181,6 +185,8 @@ ul.networkLinks li a:visited {
   /* setting default links font color in div */
   font-weight: 900;
   color: white;
+  border-style: solid;
+  border-color: white;
 }
 
 ul.networkLinks li a:hover,
@@ -189,6 +195,8 @@ ul.networkLinks li a:active {
   color: rgb(0, 153, 255);
   /* setting links font weight in div when hover or active */
   font-weight: 900;
+  border-style: solid;
+  border-color: white;
 }
 
 div.projects {
