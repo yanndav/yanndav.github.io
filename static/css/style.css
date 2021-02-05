@@ -150,7 +150,8 @@ p a:active {
 }
 
 p > br {
-  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 30px;
 }
 
 ul.networkLinks {
