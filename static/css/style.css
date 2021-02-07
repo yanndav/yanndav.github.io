@@ -11,73 +11,12 @@
 
 /****** HEADER PART **********************************************/
 
-/* Setting header parameters */
-header ul {
-  /* removing list buttons */
-  list-style-type: none;
-  /* defining background color */
-  background-color: white;
-  /* setting position stcky to the top */
-  position: -webkit-sticky;
-  position: sticky;
-  /* Removing client default margin and padding */
-  margin: 1% 5% 1% 5%;
-  padding: 0;
-  /* what if content overflows */
-  overflow: hidden;
-  /* where is the top */
-  top: 0;
-}
-
-header li {
-  /* ensuring links are aligned */
-  float: right;
-}
-
-header li a {
-  /* creating button blocks */
-  display: block;
-  /* space between buttons */
-  padding: 8px;
-}
-
-header li a:link,
-header li a:visited {
-  /* removing bottom line of links in header */
-  text-decoration: none;
-  /* setting default links font color in header */
-  color: black;
-}
-
-header li a:hover,
-header li a:active {
-  /* setting links font color in header when hover or active */
-  color: rgb(48, 148, 214);
-  /* setting links font weight in header when hover or active */
-  font-weight: 500;
-}
-
 /****** BODY PART **********************************************/
 
 /* Setting body parameters */
 body {
   font-family: "Open Sans", Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  color: white;
-}
-
-.gradient {
-  background: linear-gradient(
-    to right top,
-    #051937,
-    #113c63,
-    #176391,
-    #168ebf,
-    #12bceb
-  );
-  background-repeat: no-repeat;
-  background-size: 100% 250%;
-  background-attachment: fixed;
 }
 
 /* Title options */
@@ -85,6 +24,7 @@ h1 {
   /* defining font zie relative to body font size */
   font-size: 2.5em;
   font-weight: bold;
+  padding-top: 80px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -95,39 +35,41 @@ div.container {
   margin-left: 5%;
   margin-right: 5%;
 }
+div.background {
+  color: white;
+  background: linear-gradient(
+    to right top,
+    #051937,
+    #113c63,
+    #0f405f,
+    #11698c,
+    #0e86a7
+  );
+  top: 0px;
+  width: 100%;
+  /* border: 1px solid black; */
+  padding-bottom: 60px;
+}
 
 div.presentation {
   /* position relative to ancestor element */
-  position: relative;
-  /* ensure the presentation box is centered */
-  margin: 80px auto 30px auto;
+  margin: 0px auto 60px auto;
+}
 
-  /* Padding element inside */
-  padding: 30px 40px 40px 40px;
-
-  /* border radius */
-  border-radius: 10px;
-  /* temporary border to observe stuff */
-  /* border: 2px solid black; */
-  background-color: rgba(33, 28, 33, 0.33);
+div.identity {
+  font-size: 1.7em;
+  font-weight: 900;
+  text-align: center;
 }
 
 img.imagePresentation {
   border-radius: 50%;
-  max-width: 180px;
+  width: 180px;
   height: auto;
 }
 
 .selfPresentation {
-  margin-bottom: 30px;
   text-align: justify;
-}
-
-.identity {
-  font-size: 1.7em;
-  font-weight: 900;
-  text-align: center;
-  /* text-align: center; */
 }
 
 /* Defining links parameters in paragraphs */
@@ -151,7 +93,7 @@ p a:active {
 
 p > br {
   display: block;
-  content: "";
+  content: ""; /*option added for spacing to work on chrome*/
   margin-bottom: 30px;
 }
 
@@ -160,12 +102,11 @@ ul.networkLinks {
   /* removing list buttons */
   list-style-type: none;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 ul.networkLinks li {
   /* ensuring links are aligned */
-  margin-top: 30px;
   display: inline-block;
   float: none;
 }
@@ -199,59 +140,166 @@ ul.networkLinks li a:active {
   font-weight: 900;
 }
 
-div.projects {
-  /* box width */
-  width: 700px;
-  /* position relative to ancestor element */
-  position: relative;
-  /* ensure the presentation box is centered */
-  margin: 80px auto 30px auto;
+h1.titleProject {
+  color: #051937;
+  font-weight: 900;
+}
 
-  /* Padding element inside */
-  padding: 30px 30px 40px 30px;
+div.projectsPresentation {
+  margin: 0px auto 60px auto;
+}
 
-  /* border radius */
+a.projectCard {
+  text-decoration: none;
+  margin: 40px 0px 40px 0px;
+}
+
+.epc {
+  /* setting default links font color in div */
+  font-weight: 900;
+  color: white;
+  background: linear-gradient(
+    to right top,
+    rgb(15, 28, 112) 20%,
+    rgb(23, 99, 37) 100%
+  );
+  height: 150px;
+  width: 25%;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.descartes {
+  /* setting default links font color in div */
+  font-weight: 900;
+  color: white;
+  background: linear-gradient(
+    to right top,
+    rgb(15, 28, 112) 30%,
+    rgb(154, 47, 163) 100%
+  );
+  height: 150px;
+  width: 25%;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.projectCard h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+.projectCard article {
+  padding: 0px 20px 0px 20px;
+  text-align: justify;
+}
+
+.projectCard p {
+  margin-bottom: 10px;
+}
+span.wip {
+  background-color: goldenrod;
+  padding: 1px 7px;
+  margin-left: 2px;
+  vertical-align: middle;
+  color: white;
+  border-radius: 20px;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+span.end {
+  background-color: rgb(80, 79, 76);
+  padding: 1px 7px;
+  margin-left: 2px;
+  vertical-align: middle;
+  color: white;
+  border-radius: 20px;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+span.method {
+  /* border: #051937 solid 1px; */
   border-radius: 10px;
-  /* temporary border to observe stuff */
-  /* border: 2px solid black; */
-  background-color: rgba(33, 28, 33, 0.33);
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  font-style: italic;
+}
+
+a.projectCard:link,
+a.projectCard:visited {
+  color: black;
+}
+
+a.projectCard:hover,
+a.projectCard:active {
+  color: #051937;
 }
 
 /*********************  Large devices *****************************/
-@media (min-width: 770px) {
+@media (min-width: 900px) {
   div.presentation {
     /* box width */
     width: 800px;
+    display: flex;
+    flex-flow: row;
   }
   .identity {
-    width: 30%;
-    float: right;
+    /* display: flex;
+    flex-direction: column; */
+    /* float: right; */
   }
   .selfPresentation {
-    float: left;
-    width: 60%;
+    /* float: left; */
+    margin: 0px 50px 0px 0px;
+  }
+
+  div.projectsPresentation {
+    width: 900px;
+  }
+  a.projectCard {
+    display: flex;
+    flex-direction: row;
+  }
+  .projectCard article {
+    width: 75%;
+  }
+  .epc {
+    width: 25%;
+  }
+
+  .descartes {
+    width: 25%;
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 899px) {
   div.presentation {
     /* box width */
-    border-color: transparent;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
   }
-
   .identity {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: auto;
+    width: 100%;
+    /* float: right; */
     margin-bottom: 30px;
   }
-  img.imagePresentation {
-    display: block;
-    text-align: center;
-    max-width: 180px;
-    height: auto;
+  .selfPresentation {
+    /* float: left; */
+    width: 99%;
+    padding: 0px 20px 0px 20px;
+  }
+  div.projectsPresentation {
+    width: 100%;
+  }
+  a.projectCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .epc {
+    width: 100%;
+  }
+
+  .descartes {
+    width: 100%;
   }
 }
