@@ -6,7 +6,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-  padding: 0px;
+  /* padding: 0px; */
 }
 
 /****** HEADER PART **********************************************/
@@ -60,6 +60,7 @@ div.identity {
   font-size: 1.7em;
   font-weight: 900;
   text-align: center;
+  margin: 35px;
 }
 
 img.imagePresentation {
@@ -157,11 +158,13 @@ a.projectCard {
 .epc {
   /* setting default links font color in div */
   font-weight: 900;
+  font-family: 'Amaranth', sans-serif;
+  font-size: x-large;
   color: white;
   background: linear-gradient(
     to right top,
-    rgb(15, 28, 112) 20%,
-    rgb(23, 99, 37) 100%
+    rgb(14, 111, 124) 20%,
+    rgb(8, 87, 97) 100%
   );
   height: 150px;
   width: 25%;
@@ -242,11 +245,11 @@ a.projectCard:active {
     display: flex;
     flex-flow: row;
   }
-  .identity {
+  /* .identity {
     /* display: flex;
     flex-direction: column; */
     /* float: right; */
-  }
+  } */
   .selfPresentation {
     /* float: left; */
     margin: 0px 50px 0px 0px;
@@ -271,7 +274,7 @@ a.projectCard:active {
   }
 }
 
-@media (max-width: 899px) {
+@media (orientation:portrait),(max-width: 899px){
   div.presentation {
     /* box width */
     width: 100%;
@@ -285,8 +288,9 @@ a.projectCard:active {
   }
   .selfPresentation {
     /* float: left; */
-    width: 99%;
-    padding: 0px 20px 0px 20px;
+    width: 60%;
+    padding: 00px 40px 0px 40px;
+    
   }
   div.projectsPresentation {
     width: 100%;
