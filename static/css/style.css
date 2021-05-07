@@ -171,7 +171,9 @@ a.projectCard {
   padding-top: 55px;
   text-align: center;
 }
-
+ .ecolo{
+    font-family: 'Amaranth', sans-serif;
+  }
 .descartes {
   /* setting default links font color in div */
   font-weight: 900;
@@ -299,6 +301,7 @@ a.projectCard:active {
     display: flex;
     flex-direction: column;
   }
+ 
   .epc {
     width: 100%;
   }
