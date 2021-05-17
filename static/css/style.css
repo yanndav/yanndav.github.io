@@ -158,21 +158,26 @@ a.projectCard {
 .epc {
   /* setting default links font color in div */
   font-weight: 900;
-  font-family: 'Amaranth', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: x-large;
   color: white;
-  background: linear-gradient(
-    to right top,
-    rgb(14, 111, 124) 20%,
-    rgb(8, 87, 97) 100%
-  );
+  background: rgb(14, 111, 124) ;
   height: 150px;
   width: 25%;
   padding-top: 55px;
   text-align: center;
 }
+.ecoloLogo{
+    background-image: url(../images/ecolometrics.png);
+    background-size: 35%;
+    background-position: 0% 40%;
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    padding-top: 65px;
+
+}
  .ecolo{
-    font-family: 'Amaranth', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   }
 .descartes {
   /* setting default links font color in div */
@@ -291,7 +296,11 @@ a.projectCard:active {
   .selfPresentation {
     /* float: left; */
     width: 60%;
-    padding: 00px 40px 0px 40px;
+    padding: 10% 40px;
+    
+  }
+  .selfPresentation p {
+    padding: 10% 40px;
     
   }
   div.projectsPresentation {
