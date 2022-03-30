@@ -1,14 +1,16 @@
-import React from "react";
+import { useContext } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import ModeSwitch from "./ModeSwitch";
 import LanguageSwitch from "./LanguageSwitch";
+import { AppContext } from "../AppContext";
 
 const HeaderContainer = styled.div`
-  /* margin: 0px 10%; */
+  margin: 0px auto;
+  max-width: 1300px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 `;
@@ -38,13 +40,14 @@ const StyledLink = styled(NavLink)`
   }
 `;
 
-const Header = ({ isDarkMode, changeMode, isFrench, changeLanguage }) => {
+const Header = () => {
+  const { isDarkMode, changeMode, isFrench, changeLanguage } =
+    useContext(AppContext);
   return (
     <HeaderContainer>
       <NavigationContainer>
         <StyledLink to="/">🏠️</StyledLink>
         <StyledLink to="/blog">blog</StyledLink>
-        <StyledLink to="/about">{isFrench ? "à propos" : "about"}</StyledLink>
       </NavigationContainer>
       <NavigationContainer>
         <LanguageSwitch isFrench={isFrench} changeLanguage={changeLanguage} />

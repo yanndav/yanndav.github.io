@@ -10,7 +10,7 @@ const LangButton = styled.div`
 const LanguageSwitch = ({ isFrench, changeLanguage }) => {
   return (
     <LangButton onClick={() => changeLanguage(isFrench)}>
-      {isFrench ? "🇫🇷" : "🇬🇧"}
+      {isFrench ? "🇬🇧" : "🇫🇷"}
     </LangButton>
   );
 };
