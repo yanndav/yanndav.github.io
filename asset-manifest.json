@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.04759dfb.css",
+    "main.js": "/static/js/main.cfd9d8fb.js",
+    "static/media/CV_Yann_DAVID_FR.pdf": "/static/media/CV_Yann_DAVID_FR.b652c762f4f834bcddda.pdf",
+    "static/media/CV_Yann_DAVID_EN.pdf": "/static/media/CV_Yann_DAVID_EN.3e34ed99843165f115a6.pdf",
+    "index.html": "/index.html",
+    "main.04759dfb.css.map": "/static/css/main.04759dfb.css.map",
+    "main.cfd9d8fb.js.map": "/static/js/main.cfd9d8fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04759dfb.css",
+    "static/js/main.cfd9d8fb.js"
+  ]
+}
