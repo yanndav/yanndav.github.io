@@ -105,7 +105,7 @@ const CV = styled.a`
   color: #ffffff;
   font-weight: bold;
   background-color: #353535;
-  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 
   padding: 10px 20px;
   border-radius: 5px;
