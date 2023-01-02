@@ -47,14 +47,15 @@ const Presentation = styled.div`
   & a {
     color: #d89923;
     font-weight: bold;
+    /* border-bottom: 6px solid #d89923; */
     text-decoration: none;
-    transition: text-decoration 1s ease-in-out;
   }
   & a:hover {
-    color: #d89923;
+    transition: border-bottom 0.1s ease-in-out;
+    border-bottom: 6px solid #d89923;
     font-weight: bold;
     cursor: pointer;
-    text-decoration: underline solid 6px;
+    /* text-decoration: underline solid 6px; */
   }
   & a:active {
     color: #d89923;
@@ -102,7 +103,7 @@ const CV = styled.a`
   display: flex;
   flex-direction: row;
   gap: 10px;
-  color: #ffffff;
+  color: #f1f1f1df;
   font-weight: bold;
   background-color: #353535;
   transition: background-color 0.2s ease-in-out;
