@@ -20,7 +20,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/blog" exact element={<Blog />} />
+          {/* <Route path="/blog" exact element={<Blog />} /> */}
         </Routes>
       </Router>
     </ThemeProvider>

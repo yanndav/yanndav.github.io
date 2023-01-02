@@ -22,6 +22,11 @@ const NavigationContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+const Nom = styled.div`
+  /* font-size: 1.4em; */
+  color: #d89923;
+  font-weight: 900;
+`;
 
 const StyledLink = styled(NavLink)`
   font-size: 1.4em;
@@ -46,8 +51,10 @@ const Header = () => {
   return (
     <HeaderContainer>
       <NavigationContainer>
-        <StyledLink to="/">🏠️</StyledLink>
-        <StyledLink to="/blog">blog</StyledLink>
+        <StyledLink to="/">
+          <Nom>Yann David</Nom>
+        </StyledLink>
+        {/*  <StyledLink to="/blog">blog</StyledLink>*/}
       </NavigationContainer>
       <NavigationContainer>
         <LanguageSwitch isFrench={isFrench} changeLanguage={changeLanguage} />
