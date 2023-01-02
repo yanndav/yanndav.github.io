@@ -39,7 +39,8 @@ L'objectif avec ce site est de créer un assistant pour le pilotage des transiti
 ];
 
 const Presentation = styled.div`
-  width: 800px;
+  /* width: 800px; */
+
   line-height: 2em;
   display: flex;
   flex-direction: column;
