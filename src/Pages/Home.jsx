@@ -45,6 +45,9 @@ const Presentation = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  p {
+    margin: 0;
+  }
   & a {
     color: #d89923;
     font-weight: bold;
@@ -72,8 +75,8 @@ const Title = styled.h1`
 
 const HomeStyle = styled.div`
   margin: 70px auto;
-  width: 900px;
-  max-width: 100%;
+  width: 700px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
